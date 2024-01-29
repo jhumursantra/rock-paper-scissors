@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: lavenderblush;
+    box-sizing: border-box;
+    text-align: center;
+}
+h1 {
+    font-family: "Garamond", Times, serif;
+    font-size: 40px;
+    line-height: 5rem;
+    margin-bottom: 20px;
+}
+.choice{
+    height:auto;
+    width:150px;
+    margin:10px;
+}
+.choice:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+img{
+    height:250px;
+    width:100px;
+    object-fit: cover;
+    border-radius: 10%;
+}
+.choices{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+.score-board{
+   display:flex;
+   justify-content: center;
+   align-items:center;
+   font-size:2rem;
+   margin-top:3rem;
+   gap: 3rem;
+   font-family: "Garamond", Times, serif;
+}
+#user-score, #cat-score{
+    font-size:4rem;
+}
+.msg-container{
+    margin-top:5rem;
+    padding: 1rem;
+}
+#msg{
+    background-color: white;
+    height: 3rem;
+    font-size: 2.5rem;
+    display:inline;
+    padding:1rem;
+    border-radius:1rem;
+}
+
+/*fireworks part*/
+
+body {
+    margin: 0;
+    /* overflow: hidden; */
+}
+
+#fireworks-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999; 
+    display: none; 
+    background: transparent; 
+}
+
+.firework {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: explode 2s ease-out;
+}
+
+@keyframes explode {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
