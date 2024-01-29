@@ -82,7 +82,7 @@ function celebrate() {
     //hide fireworks after a delay
     setTimeout(() => {
         fireworksContainer.style.display = 'none';
-    }, 5000); //hide after 5s
+    }, 3000); //hide
 }
 
 function createFirework() {
